@@ -35,3 +35,43 @@ jobs:
 
       - name: Build project and UnitTest
         run: ./gradlew assembleDebug compileDebugUnitTestKotlin
+
+      - name: Spotless
+        run: ./gradlew spotlessCheck
+
+      - name: Detekt
+        run: ./gradlew detekt
+
+      - name: Robolectric
+        run: ./gradlew testDebugUnitTest
+
+      # Needed to accept licenses
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v2
+
+      - name: Compile AndroidTests
+        run: ./gradlew compileDebugAndroidTestKotlin
+
+      - name: Run instrumentation tests
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 31
+          arch: x86_64
+          disable-animations: true
+          disk-size: 2000M
+          heap-size: 600M
+          script: ./gradlew connectedDebugAndroidTest
+
+      - name: Upload build reports
+        if: always()
+        uses: actions/upload-artifact@v2
+        with:
+          name: build-reports
+          path: app/build/reports/
+
+      - name: Upload all outputs
+        if: failure()
+        uses: actions/upload-artifact@v2
+        with:
+          name: outputs
+          path: app/build/outputs/
