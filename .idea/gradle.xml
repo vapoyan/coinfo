@@ -6,10 +6,16 @@
         <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="11" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/feature" />
+            <option value="$PROJECT_DIR$/feature/alerts" />
+            <option value="$PROJECT_DIR$/feature/dashboard" />
+            <option value="$PROJECT_DIR$/feature/portfolio" />
+            <option value="$PROJECT_DIR$/feature/settings" />
           </set>
         </option>
       </GradleProjectSettings>

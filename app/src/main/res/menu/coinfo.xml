@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@id/dashboard_navigation_graph"
+        android:title="Dashboard"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@id/portfolio_navigation_graph"
+        android:title="Portfolio"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@id/alerts_navigation_graph"
+        android:title="Alerts"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@id/settings_navigation_graph"
+        android:title="Settings"
+        app:showAsAction="ifRoom" />
+</menu>

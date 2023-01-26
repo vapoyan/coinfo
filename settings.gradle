@@ -14,3 +14,7 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Coinfo"
 include ':app'
+include 'feature:dashboard'
+include 'feature:portfolio'
+include ':feature:settings'
+include ':feature:alerts'

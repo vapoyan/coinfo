@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/alerts_navigation_graph"
+    app:startDestination="@id/alertsFragment">
+
+    <fragment
+        android:id="@+id/alertsFragment"
+        android:name="app.coinfo.feature.alerts.AlertsFragment"
+        android:label="fragment_alerts"
+        tools:layout="@layout/fragment_alerts" />
+
+</navigation>
