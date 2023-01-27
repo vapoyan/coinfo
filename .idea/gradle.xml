@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
@@ -15,6 +16,8 @@
             <option value="$PROJECT_DIR$/feature/alerts" />
             <option value="$PROJECT_DIR$/feature/dashboard" />
             <option value="$PROJECT_DIR$/feature/portfolio" />
+            <option value="$PROJECT_DIR$/feature/portfolio/api" />
+            <option value="$PROJECT_DIR$/feature/portfolio/impl" />
             <option value="$PROJECT_DIR$/feature/settings" />
           </set>
         </option>
